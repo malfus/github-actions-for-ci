@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
-        run: |
-          npm install
+        run: npm install
     - uses: actions/download-artifact@master
       with:
         name: webpack artifacts
